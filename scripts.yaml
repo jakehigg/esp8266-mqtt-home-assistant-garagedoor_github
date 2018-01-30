@@ -1,0 +1,8 @@
+  garage_door:
+    alias: "Garage Door"
+    sequence:
+      - service: mqtt.publish
+        data_template:
+          topic: "ha/garagedoor/set"
+          payload: '{"state":"ACTIVATE"}'
+          retain: 0

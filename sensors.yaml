@@ -1,0 +1,4 @@
+  - platform: mqtt
+    state_topic: "ha/garagedoor"
+    name: "Garage Door"
+    value_template: '{{ value_json.doorstate }}'
